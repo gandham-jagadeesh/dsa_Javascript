@@ -116,7 +116,6 @@ class BinaryTree<T>{
 	}
 
 	levelorderTraversal(){
-
 		const queue:TreeNode<T>[] = [];
 		if(this.root === null){
 			console.log("node is empty");
