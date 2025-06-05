@@ -18,7 +18,7 @@ function isCousins(root: TreeNode | null, x: number, y: number): boolean {
 	let xlevel;
 	let ylevel;
 
-	const recursive = (node:TreeNode,parent:TreeNode,depth:number,x:number,y:number)=>{
+	const recursive = (node:TreeNode|null,parent:TreeNode|null,depth:number,x:number,y:number)=>{
 		if(node === null){return;}
 		if(node.val === x){ xparent=parent;xlevel=depth;}
 		if(node.val === y){ yparent=parent;ylevel=depth;}
