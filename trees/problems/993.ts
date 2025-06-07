@@ -1,6 +1,7 @@
 
-
-  class TreeNode {
+namespace isCousins_993{
+	
+	  class TreeNode {
       val: number
       left: TreeNode | null
       right: TreeNode | null
@@ -39,3 +40,5 @@ function isCousins(root: TreeNode | null, x: number, y: number): boolean {
  *
  * sol : can do both ways like -> first find x,y and store their parents,levels in 2d array then just check 
 */
+
+}
