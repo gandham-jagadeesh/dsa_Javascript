@@ -1,6 +1,5 @@
 
-namespace Traversal144{
-  class TreeNode {
+  export class TreeNode {
       val: number
       left: TreeNode | null
       right: TreeNode | null
@@ -40,4 +39,3 @@ function preorderTraversalIterative(root: TreeNode | null): number[] {
     }
     return result;
 };
-}

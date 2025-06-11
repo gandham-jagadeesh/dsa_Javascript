@@ -1,6 +1,5 @@
 
- namespace traversal94{
-      class TreeNode {
+ export      class TreeNode {
       val: number
       left: TreeNode | null
       right: TreeNode | null
@@ -50,7 +49,4 @@ function inorderTraversalIterative(root: TreeNode | null): number[] {
 
 
     
- }
-
-
-
+ 

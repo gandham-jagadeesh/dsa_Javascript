@@ -1,5 +1,5 @@
-namespace traversal145{
-  class TreeNode {
+
+ export  class TreeNode {
       val: number
       left: TreeNode | null
       right: TreeNode | null
@@ -38,4 +38,3 @@ function preorderTraversal(root: TreeNode | null): number[] {
     return result;
 };
 
-}
