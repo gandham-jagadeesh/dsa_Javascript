@@ -194,6 +194,65 @@ function hasCycleDirectedKahn(graph: Record<string, string[]>): boolean {
 * Must remove node from `path[]` after DFS completes — otherwise false cycles can be detected.
 * This ensures proper exploration of alternate branches.
 
+# Graph Cycle Detection: Time and Space Complexity
+
+This document explains the time and space complexity of both DFS and BFS approaches for detecting cycles in an **undirected graph**, using adjacency list representation.
+
+---
+
+## ✅ DFS-Based Cycle Detection (`isCycle()`)
+
+### 📌 Time Complexity
+
+- The DFS visits each node and each edge **exactly once**.
+- For an undirected graph:
+  - Visiting nodes: **O(V)**
+  - Visiting edges: **O(2E)** → each edge is counted twice
+
+**Overall Time Complexity: `O(V + E)`**
+
+### 📌 Space Complexity
+
+- `visited` map stores up to `V` nodes → **O(V)**
+- Call stack may go as deep as `V` → **O(V)** (worst case for recursion)
+
+**Overall Space Complexity: `O(V)`**
+
+---
+
+## ✅ BFS-Based Cycle Detection (`bfs()`)
+
+### 📌 Time Complexity
+
+- Each node and edge is processed once during BFS traversal.
+- For undirected graphs:
+  - Visiting all nodes: **O(V)**
+  - Visiting all edges: **O(2E)**
+
+**Overall Time Complexity: `O(V + E)`**
+
+### 📌 Space Complexity
+
+- `visited` map → **O(V)**
+- `queue` can hold up to `V` elements in worst case → **O(V)**
+
+**Overall Space Complexity: `O(V)`**
+
+---
+
+## 📋 Summary Table
+
+| Method           | Time Complexity | Space Complexity |
+|------------------|------------------|------------------|
+| `isCycle()` (DFS) | `O(V + E)`        | `O(V)`           |
+| `bfs()` (BFS)     | `O(V + E)`        | `O(V)`           |
+
+---
+
+> ✅ `V` = number of vertices  
+> ✅ `E` = number of edges  
+> Applicable to **undirected graphs** using adjacency lists.
+
 ---
 
 ## 📦 Bonus: Dependency Graph from `package.json`
