@@ -280,5 +280,3 @@ This generates a dependency graph you can visualize or inspect.
 * Real-time detection of circular dependencies during builds.
 
 ---
-
-Let me know if you want the `.md` file exported!
