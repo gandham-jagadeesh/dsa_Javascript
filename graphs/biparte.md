@@ -151,3 +151,8 @@ Odd-length cycle → ❌ **Not Bipartite**
 
 **Cycle:** 1–2–3–4–1 (4 nodes)
 Even-length cycle → ✅ **Bipartite**
+
+## 📺 Video Resources
+
+* [Bipartite Graph - Intuition and Proof (Abdul Bari)](https://www.youtube.com/watch?v=_TIqhvDR8DQ)
+* [Check if Graph is Bipartite using BFS (take U forward)](https://www.youtube.com/watch?v=bZBmN7I7GNQ)
