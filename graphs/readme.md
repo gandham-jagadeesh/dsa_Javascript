@@ -37,8 +37,13 @@ Solutions and notes for graph-related problems using BFS, DFS, Union-Find, and m
 ## 🔁 Pattern: String / Word Transformation
 
 > Recommended Practice Order:
+## 🔁 Pattern: String / Word Transformation
 
-1. [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)
-2. [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)
-3. [Open the Lock](https://leetcode.com/problems/open-the-lock/)
-4. [Word Ladder](https://leetcode.com/problems/word-ladder/)
+> Recommended Practice Order:
+
+1. [433. Minimum Genetic Mutation](433.MinimumGeneticMutation.md) • [TS](433.MinimumGeneticMutation.ts)
+2. [127. Word Ladder](127.wordladder.md) • [TS](127.wordladder.ts)
+3. [Minimum Genetic Mutation (Leetcode)](https://leetcode.com/problems/minimum-genetic-mutation/)
+4. [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)
+5. [Open the Lock](https://leetcode.com/problems/open-the-lock/)
+6. [Word Ladder (Leetcode)](https://leetcode.com/problems/word-ladder/)
