@@ -8,11 +8,8 @@
 ### Problem Order:
 
 [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)  
-⬇️  
 [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)  
-⬇️  
 [Open the Lock](https://leetcode.com/problems/open-the-lock/)  
-⬇️  
 [Word Ladder](https://leetcode.com/problems/word-ladder/)
 
 
