@@ -3,6 +3,18 @@
 
 # problems
 
+## 🔁 Pattern: String / Word Transformation (Graph Problems)
+
+### Problem Order:
+
+[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)  
+⬇️  
+[Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)  
+⬇️  
+[Open the Lock](https://leetcode.com/problems/open-the-lock/)  
+⬇️  
+[Word Ladder](https://leetcode.com/problems/word-ladder/)
+
 
 # 547 province problem
  - turn n*n matrix into adjlist and bfs and iterate over the nodes add counter++ if for each pass of nodes
