@@ -1,6 +1,5 @@
 # 📊 Graph Problems & Solutions
 
-Solutions and notes for graph-related problems using BFS, DFS, Union-Find, and matrix traversal.
 
 ---
 
@@ -21,24 +20,27 @@ Solutions and notes for graph-related problems using BFS, DFS, Union-Find, and m
 ### 🔹 Classic Graph Problems
 
 - [547. Number of Provinces](547Province.md) • [TS](547provinces.ts)
-- [782. Is Graph Bipartite](782.bipartegraph.md) • [TS](782.biparteGraph.ts)
+- [782. Is Graph Bipartite?](782.bipartegraph.md) • [TS](782.biparteGraph.ts)
 
 ---
 
 ## 🧠 Core Graph Concepts
 
-- [Bipartite Graph](biparte.md)
+- [Bipartite Graph Notes](biparte.md)
 - [Cycle Detection (Notes)](cycles.md) • [Code](detectcycle.ts)
-- [DFS Code](dfs.ts)
-- [Graph Utilities](graph.ts)
+- [DFS Template](dfs.ts)
+- [Graph Utility Code](graph.ts)
 
 ---
 
-## 🔁 Pattern: String / Word Transformation
+## 🔁 Word / String Transformation
 
-> Recommended Practice Order:
+> **Recommended Practice Order:**
 
-1. [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)
-2. [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)
-3. [Open the Lock](https://leetcode.com/problems/open-the-lock/)
-4. [Word Ladder](https://leetcode.com/problems/word-ladder/)
+1. [433. Minimum Genetic Mutation](433.MinimumGeneticMutation.md) • [TS](433.MinimumGeneticMutation.ts)
+2. [127. Word Ladder](127.wordladder.md) • [TS](127.wordladder.ts)
+3. [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)
+4. [Open the Lock](https://leetcode.com/problems/open-the-lock/)
+
+---
+
