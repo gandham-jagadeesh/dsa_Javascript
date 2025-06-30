@@ -11,7 +11,7 @@
 - [542. 01 Matrix](542.01matrix.md) • [TS](542.01matrix.ts)
 - [733. Flood Fill](733.floodfill.md) • [TS](733.floodfill.ts)
 - [994. Rotting Oranges](994.rottingOranges.md) • [TS](994.rottingOranges.ts)
-- [1765. Map of Highest Peak](1765.maxofhighestpeak.md) • [Notes](1765.maxofhighestpeak.txt)
+- [1765. Map of Highest Peak](1765.maxofhighestpeak.md)
 - 🆕 [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
 - 🆕 [1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
 
