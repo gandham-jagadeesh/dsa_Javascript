@@ -1,32 +1,42 @@
+# 📊 Graph Problems & Solutions
 
+Solutions and notes for graph-related problems using BFS, DFS, Union-Find, and matrix traversal.
 
+---
 
-# problems
+## ✅ Problems Solved
 
-## 🔁 Pattern: String / Word Transformation (Graph Problems)
+### 🔹 Matrix / Grid Graphs
 
-### Problem Order:
+- [1020. Number of Enclaves](1020.enclave.md)
+- [542. 01 Matrix](542.01matrix.md) • [TS](542.01matrix.ts)
+- [733. Flood Fill](733.floodfill.md) • [TS](733.floodfill.ts)
+- [994. Rotting Oranges](994.rottingOranges.md) • [TS](994.rottingOranges.ts)
+- [1765. Map of Highest Peak](1765.maxofhighestpeak.md) • [Notes](1765.maxofhighestpeak.txt)
 
-[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)  
-[Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)  
-[Open the Lock](https://leetcode.com/problems/open-the-lock/)  
-[Word Ladder](https://leetcode.com/problems/word-ladder/)
+---
 
+### 🔹 Classic Graph Problems
 
-# 547 province problem
- - turn n*n matrix into adjlist and bfs and iterate over the nodes add counter++ if for each pass of nodes
- - for the first node -> if its not visited then counter becomes 1 and then after it traverse through all connected and then second for loop another connected components which are indepent which counter becomes 2 
- - tc: 0(n^2) sc:o(n) -> not best approach as turn matrix to adjaceny list is not good we can directly perform on 2d matrix
- 
+- [547. Number of Provinces](547Province.md) • [TS](547provinces.ts)
+- [782. Is Graph Bipartite](782.bipartegraph.md) • [TS](782.biparteGraph.ts)
 
- # find cycles in a graph
-  
-  1 -> [2,3]
-  2 -> [1,3]
-  3 -> [1,2]
+---
 
-dfs -> for(node of nodes){
-    dfs(node,null,graph,path);
-}
+## 🧠 Core Graph Concepts
 
-dfs(1,null,graph,[]) -> 1 is added to path -> dfs(2,1,graph,[1->2]) -> dfs(1,2,)
+- [Bipartite Graph](biparte.md)
+- [Cycle Detection (Notes)](cycles.md) • [Code](detectcycle.ts)
+- [DFS Code](dfs.ts)
+- [Graph Utilities](graph.ts)
+
+---
+
+## 🔁 Pattern: String / Word Transformation
+
+> Recommended Practice Order:
+
+1. [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)
+2. [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/)
+3. [Open the Lock](https://leetcode.com/problems/open-the-lock/)
+4. [Word Ladder](https://leetcode.com/problems/word-ladder/)
