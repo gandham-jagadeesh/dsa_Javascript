@@ -87,3 +87,5 @@ so thats we are doing and of all these bits to find such that we can do n number
 # [Solution](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/7063501/detailed-explanation-for-beginner-in-deepening-bitwise-and-the-problem-understanding/)
 
 # [solution](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/7063035/track-common-bits-of-misplaced-elements-to-determine-k-explained-in-3-point/)
+
+# [Solution](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/7064449/stellars-clean-code-video-intuition-appr-9y09/)
