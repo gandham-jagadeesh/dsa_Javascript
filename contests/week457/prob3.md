@@ -80,3 +80,67 @@ This reduces the number of binary search steps significantly (from \~30 to \~log
 * If fewer than `k`, increase `mid`
 
 This approach ensures you find the **minimum possible threshold** that satisfies the condition.
+
+
+
+# Reverse DSU Approach — Building Dense Graph in Reverse
+
+## Problem
+Find the smallest edge weight `t` such that if we remove all edges with weight ≤ `t`,  
+the graph has **at least** `k` connected components.
+
+---
+
+## Key Idea
+Instead of *removing* edges from the graph and re-checking connectivity (which can be costly),  
+we **reverse** the process:
+
+1. Sort all edges **by weight descending** (largest first).
+2. Start with **n** disconnected nodes (n components).
+3. **Add edges** one by one, from largest weight to smallest:
+   - Use **DSU (Disjoint Set Union)** to merge components.
+   - Track the number of components.
+4. When the number of components drops **below** `k`,  
+   the **current edge’s weight** is the smallest weight that still keeps components < k.
+5. Return this weight.
+
+---
+
+## Why This Works
+- Removing small-weight edges until the graph reaches `k` components  
+  is equivalent to **adding large-weight edges** until the graph drops below `k`.
+- DSU enables near O(1) merges, so we avoid expensive repeated BFS/DFS scans.
+
+---
+
+## Algorithm
+```ts
+function minTime(n: number, edges: number[][], k: number): number {
+    edges.sort((a, b) => b[2] - a[2]); // sort by weight descending
+    const dsu = new DSU(n);
+    let components = n;
+
+    for (const [u, v, w] of edges) {
+        const pu = dsu.findParent(u);
+        const pv = dsu.findParent(v);
+        if (pu !== pv) {
+            dsu.findUnionByRank(u, v);
+            components--;
+        }
+        if (components < k) {
+            return w;
+        }
+    }
+    return 0; // if never drops below k
+}
+
+# Complexity Analysis
+- Sorting: O(E log E)
+
+- DSU Merges: O(E α(N)) ≈ O(E)
+
+- Total: O(E log E)
+
+- Space: O(N) (DSU parent, rank, size arrays)
+
+
